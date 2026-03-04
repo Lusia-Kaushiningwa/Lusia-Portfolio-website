@@ -87,7 +87,7 @@ body {
 }
 
 .colorful-letter{
-    background-image: linear-gradient(135deg, rgb(250, 113, 283)0%, rgb(255, 142, 134)60%);
+    background-image: linear-gradient(135deg, rgb(250, 113, 250)0%, rgb(255, 142, 134)60%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -224,6 +224,7 @@ body {
 
 .link{
     text-decoration: none;
+    transition: 1s ease-in-out;
 }
 
 /* I had to double this code, because of the :hover and :active on link above */
@@ -258,7 +259,6 @@ body {
 .link:hover, .link:active{
     font-size: 1.2rem;
     transform: scale(1.5);
-    transition: 1s ease-in-out;
     /* second solution: */
     /* font-size: 1.2rem; 
     transition: font-size 2s ease-in-out;  */
