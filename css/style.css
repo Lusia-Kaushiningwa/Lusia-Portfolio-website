@@ -27,7 +27,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0px;  
-    background-image: linear-gradient(135deg, rgb(250, 113, 283)0%, rgb(255, 142, 134)60%);
+    background-image: linear-gradient(135deg, rgb(250, 113, 250)0%, rgb(255, 142, 134)60%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -202,6 +202,7 @@ body {
 .bottom{
     align-self: flex-start;
     margin-top: auto;
+    transition: background-color 1s ease, color 1s ease;
 }
 
 /* Miscellaneous */
@@ -213,7 +214,7 @@ body {
     color: black;
 }
 
-/* I only used button-outline on this project, but you may like the other one more */
+/* I only used button-outline on this project, */
 .button-outline{
     border: 2px solid  rgba(253, 129, 187, 0.3);
     padding: 10px;
@@ -253,20 +254,17 @@ body {
     text-decoration: none;
     border-radius: 5%;
     color: rgb(255, 255, 255);
-    transition: background-color 1s ease, color 1s ease;
+    
 }
 
 .link:hover, .link:active{
     font-size: 1.2rem;
     transform: scale(1.5);
-    /* second solution: */
-    /* font-size: 1.2rem; 
-    transition: font-size 2s ease-in-out;  */
 }
 
 .progress-bar:hover, .progress-bar:active {
     box-shadow: 5px 5px 5px #cdadcd;
-    transition: box-shadow 1s ease;
+    
 }
 
 /* ---------------------------------- */
@@ -380,14 +378,15 @@ footer{
     display: block;
     height: 10px;
     border-radius: 20px;
+    transition: box-shadow 1s ease;
 }
 
 .progress-bar span {
     height: 10px;
     float: left;
-    background: linear-gradient(135deg, rgb(250, 113, 283)0%, rgb(255, 142, 134)60%);
+    background: linear-gradient(135deg, rgb(250, 113, 250)0%, rgb(255, 142, 134)60%);
     border-radius: 20px;
-    -webkit-background: linear-gradient(135deg, rgb(250, 113, 283) 0%, rgb(255, 142, 134) 60%);
+    -webkit-background: linear-gradient(135deg, rgb(250, 113, 250) 0%, rgb(255, 142, 134) 60%);
     -webkit-border-radius: 20px;
 }
 
