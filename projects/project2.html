@@ -1,112 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Lusia Kaushiningwa showcasing web development projects.">
-    <meta name="author" content="Lusia Kaushiningwa">
-    <link rel="icon" href="assets/favicon.jpg">
-    <meta property="og:title" content="Lusia Kaushiningwa Portfolio">
-    <meta property="og:description" content="Web development projects using HTML, CSS, JavaScript, and Bootstrap.">
-    <meta property="og:image" content="images/preview.png">
-    <meta name="theme-color" content="#0d6efd">
-    <title>Lusia portfolio -  Project 2</title>
-    <link rel="shortcut icon" href="../assets/Code blossom.jpg">
-    <link rel="icon" href="../assets/Code blossom.jpg">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/style-project.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lusia Portfolio - Project 2</title>
+
+    <link rel="icon" href="../assets/Code blossom.jpg" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- My Custom CSS LAST -->
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Montserrat:wght@200;400&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet" />
+
 </head>
+
 <body>
-    <!-- navigation bar -->
-    <nav class="sticky">
-        <label for="drop" class="toggle" id="main-toggle">
-            <span class="nav-icon"></span>
-        </label>
-        <input type="checkbox" id="drop">
-        <ul class="main-nav">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about-me.html">About me</a></li>
-            <li><a href="../skill-set.html">Skill-set</a></li>
-            <li><a href="../portfolio.html">Projects</a></li>
-            <li><a href="../index.html#contact-me">Contact me</a></li>
-        </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Lusia</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about-me.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../skill-set.html">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../portfolio.html">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact-me">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- project name -->
-    <section class="w-900 padding center">
-        <h2 class="medium-spacing-halfsize">Smart Quiz App</h2>
-        <p class="center italic">Interactive Web-Based Quiz Application</p>
+    <!-- PROJECT TITLE -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="fw-bold">Smart Quiz App</h2>
+
+            <p class="text-muted">Interactive Web-Based Quiz Application</p>
+        </div>
     </section>
 
-    <!-- about this project -->
-    <section class="w-900 padding center">
-        <h3 class="main-title">🎯 Project Overview</h3>
-        <section>
-            <p class="justify">The Smart Quiz App is an interactive web application that allows users to answer multiple-choice questions, track their score, and receive instant feedback.<span class="bold">The goal</span>. of this project was to build a fun, engaging, and fully functional quiz system using pure front-end technologies.</p>
-            <p class="justify">This project focuses on logic building, DOM manipulation, and user interaction. It simulates a real <span class="bold">quiz environment</span> with timed questions, score tracking, and dynamic question rendering.</p>
-            <p>The app was built using HTML, CSS, and JavaScript without external frameworks, which helped strengthen my understanding of core web development concepts.</p>
-        </section>
+    <!-- OVERVIEW -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="text-center mb-4">🎯 Project Overview</h3>
+
+            <div class="col-lg-8 mx-auto">
+                <p>
+                    The Smart Quiz App is an interactive web application that allows users to answer multiple-choice questions, track their score, and receive instant feedback.
+                </p>
+
+                <p>
+                    The goal was to build a fun, engaging, and fully functional quiz system using pure front-end technologies.
+                </p>
+
+                <p>
+                    This project focuses on logic building, DOM manipulation, and user interaction, simulating a real quiz environment with timers and dynamic rendering.
+                </p>
+
+                <p>
+                    Built using <strong>HTML, CSS, and JavaScript</strong> — no frameworks — which strengthened my understanding of core web development concepts.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="w-900 padding">
-        <h3 class="main-title center">🧠 Features & Functionality</h3>
-    </section>
-    <section class="wrapper">
-        <section class="column card">
-            <p class="bold center">The Smart Quiz App includes</p>
-            <ul class="no-bullet-list no-padding-list-item">
-                <!-- if you take the span-s out, the fonts won't be that colorful -->
-                <li><span class="colorful-letter">Dynamic question rendering using JavaScript arrays</span></li>
-                <li><span class="colorful-letter">Multiple-choice answer selection</span></li>
-                <li><span class="colorful-letter">Instant feedback on correct/incorrect answers</span></li>
-                <li><span class="colorful-letter">Automatic score calculation</span></li>
-                <li><span class="colorful-letter">Progress tracking</span></li>
-                <li><span class="colorful-letter">Global timer for the quiz</span></li>
-                <li><span class="colorful-letter">End screen with final score display</span></li>
-                <li><span class="colorful-letter">Restart functionality</span></li>
-            </ul>
-            <p>All questions are stored in a structured JavaScript array, making it easy to update or expand the quiz.</p>
-        </section>
-        <section class="column card">
-            <p class="bold center">🎨 UI & Interaction</p>
-            <ul class="no-bullet-list no-padding-list-item">
-                <li><span class="colorful-letter">Smooth transitions between questions</span></li>
-                <li><span class="colorful-letter">Interactive answer buttons</span></li>
-                <li><span class="colorful-letter">Visual feedback for selected answers</span></li>
-                <li><span class="colorful-letter">Mobile-friendly responsive design</span></li>
-                <li><span class="colorful-letter">Organized layout using Flexbox</span></li>
-            </ul>
-        <p>The focus was on making the quiz experience simple, intuitive, and engaging.</p>
-        </section>
+    <!-- FEATURES -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h3 class="text-center mb-5">🧠 Features & Functionality</h3>
+
+            <div class="row g-4">
+                <!-- FEATURES CARD -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Core Features</h5>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="mb-2">Dynamic questions (JavaScript arrays)</li>
+
+                                <li class="mb-2">Multiple-choice answers</li>
+
+                                <li class="mb-2">Instant feedback</li>
+
+                                <li class="mb-2">Score calculation</li>
+
+                                <li class="mb-2">Progress tracking</li>
+
+                                <li class="mb-2">Quiz timer</li>
+
+                                <li class="mb-2">Final score screen</li>
+
+                                <li class="mb-2">Restart functionality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI CARD -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">🎨 UI & Interaction</h5>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="mb-2">Smooth transitions</li>
+
+                                <li class="mb-2">Interactive buttons</li>
+
+                                <li class="mb-2">Visual answer feedback</li>
+
+                                <li class="mb-2">Mobile responsive design</li>
+
+                                <li class="mb-2">Clean layout structure</li>
+                            </ul>
+
+                            <p class="mt-3 text-center">
+                                Simple, intuitive, and engaging user experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- what did i learn -->
-    <section class="w-900 padding center baby-pink-light">
-        <h3 class="main-title">📚 What I Learned</h3>
-        <p>This project significantly improved my understanding of:</p>
-        <ul class="justify padding-list-10">
-            <li class="no-padding-list-item"><span class="bold">Working with arrays and objects</span> </li>
-            <li class="no-padding-list-item">Building application logic step by step.</li>
-            <li class="no-padding-list-item">Handling events and user input</li>
-            <li class="no-padding-list-item">Managing state current question, score, timer</li>
-            <li class="no-padding-list-item">Updating the DOM dynamically</li> 
-            <li class="no-padding-list-item">Separating concerns between HTML, CSS, and JavaScript</li>
-</section>
-<section class="w-900 padding center">
-<p>The Smart Quiz App helped me move from static web pages to interactive web applications. It strengthened my confidence in writing functional JavaScript and solving real-world logic problems.</p>
-    <p class="wrapper justify-content"><a href="../portfolio.html" class="link-no-scale colorful-letter">Back to portfolio</a></p>
-</section>
-    <!-- footer -->
-  <footer>
-  <p>© <span id="year">2026</span> Lusia. All rights reserved.</p>
-</footer>
-<script src="../js/main.js"></script>
+    <!-- WHAT I LEARNED -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="text-center mb-4">📚 What I Learned</h3>
+
+            <div class="col-lg-8 mx-auto">
+                <ul class="mb-3 ps-3">
+                    <li class="mb-2">Working with arrays and objects</li>
+
+                    <li class="mb-2">Building application logic step by step</li>
+
+                    <li class="mb-2">Handling events and user input</li>
+
+                    <li class="mb-2">Managing application state</li>
+
+                    <li class="mb-2">Updating the DOM dynamically</li>
+
+                    <li class="mb-2">Separating HTML, CSS, and JavaScript</li>
+                </ul>
+
+                <p class="mt-4">
+                    This project helped me move from static pages to interactive applications, strengthening my confidence in JavaScript and real-world problem solving.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK BUTTON -->
+    <div class="text-center pb-5">
+        <a href="../portfolio.html" class="btn btn-primary">
+        Back to Portfolio
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p class="mb-0">© 2026 Lusia. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
